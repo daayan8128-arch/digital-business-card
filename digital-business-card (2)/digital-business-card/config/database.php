@@ -41,7 +41,11 @@ return [
             'journal_mode' => null,
             'synchronous' => null,
         ],
-
+// 'libsql' => [
+//     'driver' => 'sqlite',
+//     'url' => env('TURSO_DATABASE_URL'),
+//     'authToken' => env('TURSO_AUTH_TOKEN'),
+// ],
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DB_URL'),
