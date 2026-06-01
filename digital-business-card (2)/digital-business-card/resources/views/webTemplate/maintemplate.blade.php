@@ -45,7 +45,7 @@
 
 <body class="index-page">
 
-  @include('namespace::webTemplate.business_card')
+  @include('webTemplate.business_card')
 
 
 
@@ -54,7 +54,7 @@
 
   <!-- End Main -->
 
-  @include('namespace::webTemplate.header')
+  @include('webTemplate.header')
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

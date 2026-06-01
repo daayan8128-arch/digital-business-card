@@ -42,7 +42,7 @@
 
 <body class="index-page">
 
-  @include('namespace::mainsample.business_card')
+  @include('mainsample.business_card')
 
 
   
@@ -51,7 +51,7 @@
 
     <!-- End Main -->
 
-  @include('namespace::mainsample.header')
+  @include('mainsample.header')
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
