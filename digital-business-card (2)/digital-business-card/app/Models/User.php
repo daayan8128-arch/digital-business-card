@@ -21,7 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'role',   // ✅ new role column
+        'role',
         'is_premium',
         'subscription_count',
         'premium_start_date',
@@ -44,9 +44,18 @@ class User extends Authenticatable
     public function isSuperAdmin(): bool
     {
         return $this->role === self::ROLE_SUPERADMIN;
-        
-    }
 
+    }
+    /**
+     * Determine if the user can access the given panel.
+     *
+     * @param mixed $panel
+     * @return bool
+     */
+    public function canAccessPanel($panel): bool
+    {
+        return true;
+    }
     public function isAdmin(): bool
     {
         return $this->role === self::ROLE_ADMIN;
