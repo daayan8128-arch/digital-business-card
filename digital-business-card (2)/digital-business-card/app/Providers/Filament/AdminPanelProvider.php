@@ -26,8 +26,8 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
-            ->path('admin')
-            ->login(CustomLogin::class) // 👈 custom login register yaha
+            ->path('login')
+            ->login(CustomLogin::class) 
             ->colors([
                 'primary' => Color::Amber,
             ])
